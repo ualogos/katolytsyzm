@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+.justified-text {
+  text-align: justify;
+}
+
+h1 {
+  text-align: left;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  text-align: left;
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+header {
+  background-color: #ffffff;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px; 
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+header h1 {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  color: #000;
+  margin: 0; 
+}
+
+
+p {
+  text-align: left;
+  line-height: 1.7;
+  font-size: 20px;
+}
+
+.yellow {
+  color: #FFD700;
+}
+
+.blue {
+  color: #007BFF;
+}
+
+
+footer {
+  background-color: #f0f0f0;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-left {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-top: 10px;
+}
+
+.footer-right {
+  flex: 1;
+  text-align: right;
+}
+
+.header-quote {
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  color: #555;
+  margin-left: auto;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+.article-image {
+  width: 100%;
+  max-width: 100%; /* чтобы точно совпадало с текстом */
+  height: auto;
+  display: block;
+  margin: 20px 0; /* сверху и снизу отступ, по бокам — нет */
+}
+
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+
+  .header-quote {
+    font-size: 14px;
+    white-space: normal;
+    text-align: left;
+    color: #555;
+    font-style: italic;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-right {
+    margin: 5px 0;
+    text-align: center;
+  }
+}
